@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromptInject - AI Copilot for the Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/icon48.png">
+</head>
+
+<body>
+
+    <!-- Background Orbs -->
+    <div class="background-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">
+                <img src="assets/icon48.png" alt="Logo">
+                <span>PromptInject</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+                <a href="#privacy">Privacy</a>
+                <a href="#contact">Contact</a>
+                <a href="https://chrome.google.com/webstore/detail/your-id-here" class="btn-primary nav-btn"
+                    target="_blank">Get Extension</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Your Personal <span class="highlight">Prompt Gems</span> for Every Text Box.</h1>
+            <p>Save, manage, and optimize your prompts instantly on any website. Stop switching tabs and start creating.
+            </p>
+            <div class="cta-group">
+                <a href="https://chrome.google.com/webstore/detail/your-id-here" class="btn-primary btn-lg"
+                    target="_blank">Add to Chrome - It's Free</a>
+                <a href="#features" class="btn-secondary btn-lg">Learn More</a>
+            </div>
+
+            <div class="hero-preview">
+                <div class="glass-card preview-card">
+                    <div class="preview-header">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                    </div>
+                    <div class="preview-body">
+                        <video autoplay loop muted playsinline class="hero-video">
+                            <source src="assets/Video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <div class="container">
+            <h2 class="section-title">Why PromptInject?</h2>
+            <div class="features-grid">
+                <div class="glass-card feature-card">
+                    <div class="icon">⚡</div>
+                    <h3>Instant Injection</h3>
+                    <p>Access your prompt library anywhere with a simple shortcut (Cmd+Shift+Y). Search and insert in
+                        milliseconds.</p>
+                </div>
+                <div class="glass-card feature-card">
+                    <div class="icon">✨</div>
+                    <h3>AI Optimization</h3>
+                    <p>Turn rough ideas into polished prompts using models like Mistral or GPT-4, directly within the
+                        overlay.</p>
+                </div>
+                <div class="glass-card feature-card">
+                    <div class="icon">🔒</div>
+                    <h3>Privacy First</h3>
+                    <p>Your API keys and prompts are stored locally in your browser. No external servers looking at your
+                        data.</p>
+                </div>
+                <div class="glass-card feature-card">
+                    <div class="icon">🖱️</div>
+                    <h3>Context Actions</h3>
+                    <p>Select any text, right-click, and "Save as Prompt" instantly. seamless workflow integration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section alt-bg">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Built for Creators</h2>
+                    <p>PromptInject was born from the frustration of constantly switching tabs to copy-paste prompts
+                        from notes or ChatGPT.</p>
+                    <p>We believe AI tools should be where you work—in your email, your IDE, your social media—not
+                        distinct destinations.</p>
+                </div>
+                <div class="glass-card about-stats">
+                    <div class="stat">
+                        <span class="number">100%</span>
+                        <span class="label">Local Data</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">Any</span>
+                        <span class="label">Website</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section id="privacy" class="section">
+        <div class="container">
+            <h2 class="section-title">Privacy Policy</h2>
+            <div class="glass-card privacy-card">
+                <p><strong>We do not collect your data.</strong></p>
+                <ul>
+                    <li><strong>Prompts:</strong> Stored locally in your browser's `chrome.storage`.</li>
+                    <li><strong>API Keys:</strong> Stored locally and only sent to OpenRouter API directly from your
+                        browser.</li>
+                    <li><strong>Tracking:</strong> No analytics, no cookies, no tracking pixels.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="glass-card contact-form-card">
+                <form action="https://formsubmit.co/bosco98123@gmail.com" method="POST">
+                    <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_subject" value="New PromptInject Contact!">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next"
+                        value="https://yourpage.github.io/PromptInject/landing-page/index.html">
+
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" name="name" required placeholder="Jane Doe">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" name="email" required placeholder="jane@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message" rows="5" required placeholder="How can we help?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="assets/icon48.png" alt="Logo">
+                <span>PromptInject</span>
+            </div>
+            <p>&copy; 2024 PromptInject. All rights reserved.</p>
+            <div class="social-links">
+                <!-- Add social links if needed -->
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>

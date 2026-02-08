@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromptInject Settings</title>
+    <link rel="stylesheet" href="popup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="../assets/icon48.png" alt="Logo" style="width: 24px; height: 24px;">
+            <h1>PromptInject</h1>
+        </div>
+        <span class="version">v1.0</span>
+    </div>
+
+    <div class="container">
+        <!-- Help Section -->
+        <div class="section">
+            <h2>❓ How to Use</h2>
+            <ul class="help-list">
+                <li><strong>Open Overlay:</strong> Use the shortcut on any page.</li>
+                <li><strong>Save Selection:</strong> Right-click selected text -> "Save as Prompt".</li>
+                <li><strong>Search:</strong> Type to filter saved prompts.</li>
+                <li><strong>Insert:</strong> Click a prompt or press Enter.</li>
+                <li><strong>Add/Edit:</strong> Use the <strong>+</strong> button in the overlay.</li>
+                <li><strong>Optimize:</strong> Use the <strong>✨</strong> button to refine text with AI.</li>
+            </ul>
+            <br>
+            <h2>❓For AI features</h2>
+            <ul class="help-list">
+                <li>Go to <a href="https://openrouter.ai/" target="_blank">OpenRouter</a> signup generate an free API
+                    key</li>
+                <li>Paste it in the API Key field.</li>
+                <li>Choose a model from the list.</li>
+                <li>Set a system prompt if you want.</li>
+                <li>Save the settings.</li>
+            </ul>
+        </div>
+        <!-- AI Configuration Section -->
+        <div class="section">
+            <h2>🤖 AI Configuration</h2>
+            <div class="form-group">
+                <label for="apiKey">OpenRouter API Key</label>
+                <input type="text" id="apiKey" placeholder="sk-or-..." autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="model">Model ID</label>
+                <input type="text" id="model" placeholder="mistralai/mistral-7b-instruct:free">
+            </div>
+            <div class="form-group">
+                <label for="systemPrompt">System Prompt</label>
+                <textarea id="systemPrompt" rows="3" placeholder="You are an expert..."></textarea>
+            </div>
+            <button id="saveBtn" class="btn btn-primary">Save Settings</button>
+            <div id="status" class="status-msg"></div>
+        </div>
+
+        <!-- Shortcuts Section -->
+        <div class="section">
+            <h2>⌨️ Shortcuts</h2>
+            <p class="description">Default: <span class="badge">Cmd+Shift+Y</span> (Mac) or <span
+                    class="badge">Ctrl+Shift+Y</span> (Win)</p>
+            <button id="shortcutsBtn" class="btn btn-secondary">Configure Shortcuts</button>
+        </div>
+
+        <!-- Support Section -->
+        <div class="section support-section">
+            <h2>❤️ Support</h2>
+            <a href="https://www.buymeacoffee.com/bosco98123u" target="_blank" class="bmc-button">
+                <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee"
+                    style="height: 40px !important; width: 145px !important;">
+            </a>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

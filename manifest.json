@@ -1,0 +1,58 @@
+{
+    "manifest_version": 3,
+    "name": "PromptInject",
+    "version": "1.0",
+    "description": "Save and inject AI prompts into any text field.",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage",
+        "contextMenus"
+    ],
+    "host_permissions": [
+        "https://openrouter.ai/api/*"
+    ],
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+    "background": {
+        "service_worker": "background/background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content/content.js"
+            ]
+        }
+    ],
+    "commands": {
+        "open_prompt_overlay": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Y",
+                "mac": "Command+Shift+Y"
+            },
+            "description": "Open Prompt Overlay"
+        }
+    },
+    "icons": {
+        "16": "assets/icon16.png",
+        "48": "assets/icon48.png",
+        "128": "assets/icon128.png"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "styles/overlay.css",
+                "assets/icon16.png",
+                "assets/icon48.png",
+                "assets/icon128.png"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}
