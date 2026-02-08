@@ -1,7 +1,7 @@
 # PromptInject 🚀  
 **Your Personal AI Copilot for Every Text Box on the Web.**  
 
-![PromptInject Banner](assets/icon128.png)  
+<img src="assets/icon128.png" width="128" height="128" alt="PromptInject Banner">
 
 **PromptInject** is a powerful Chrome extension that lets you save, manage, and inject your favorite AI prompts into **any editable field on any website**. Whether you're writing emails, coding in an IDE, or chatting on social media, PromptInject brings your prompts to you instantly.  
 
