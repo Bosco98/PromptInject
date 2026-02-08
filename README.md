@@ -1,5 +1,5 @@
 # PromptInject 🚀  
-**Your Personal AI Copilot for Every Text Box on the Web.**  
+**Your AI Prompt Hub Across the Web.**  
 
 <img src="assets/icon128.png" width="128" height="128" alt="PromptInject Banner">
 
